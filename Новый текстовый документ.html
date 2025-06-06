@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PelmeniWagon</title>
+  <link href="пельмені .jfif" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.5em;
+      color: #ff7b00;
+    }
+    .logo span {
+      color: #ffb900;
+    }
+    .location, .search, .login {
+      display: flex;
+      align-items: center;
+      font-size: 0.9em;
+    }
+    .login button {
+      background: #ff7b00;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .hero {
+      background: linear-gradient(135deg, #fca311, #ff7b00);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 60px 40px;
+      justify-content: space-between;
+    }
+    .hero-text h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .hero-text p {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+    .search-box {
+      margin-top: 30px;
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      display: flex;
+      gap: 10px;
+    }
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 8px;
+    }
+    .search-box button {
+      background: #ff7b00;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .hero img {
+      width: 400px;
+      border-radius: 50%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    section {
+      padding: 60px 40px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .menu-grid, .reviews {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .menu-item, .review {
+      background: #fff3e0;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1 1 250px;
+    }
+    .rating {
+      margin-top: 10px;
+      color: #ffa500;
+    }
+    .cart, .checkout {
+      background: #fff8e1;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    .cart button, .checkout button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ff7b00;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 30px 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">pelmeni<span>Wagon</span></div>
+    <div class="location">Доставка до: <strong style="margin-left: 5px;">Бориспіль, Україна</strong></div>
+    <div class="search">🔍 Пошук</div>
+    <div class="login"><button>🔐 Увійти</button></div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Хочеться пельменів?</h1>
+      <p>Гарячі та смачні пельмені вже прямують до тебе!</p>
+
+      <div class="search-box">
+        <input type="text" placeholder="Введіть вашу адресу">
+        <button>Знайти пельмені</button>
+      </div>
+    </div>
+    <img src="пельмені .jfif" alt="Пельмені" />
+  </section>
+
+  <section id="menu">
+    <h2>Меню</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Класичні пельмені</h3>
+        <img src="класичні пельменні.jfif" alt="Пельмені" />
+        <p>Традиційні зі свининою та яловичиною</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.5/5)</div>
+        <button>Додати до кошика</button>
+      </div>
+      <div class="menu-item">
+        <h3>Пельмені з куркою</h3>
+        <img src="курка ураа.jfif" alt="Пельмені" />
+        <p>Легкі та соковиті</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.2/5)</div>
+        <button>Додати до кошика</button>
+      </div>
+      <div class="menu-item">
+        <h3>Вегетаріанські</h3>
+        <img src="веган.webp" alt="Пельмені" />
+        <p>Начинка з картоплею та грибами</p>
+        <div class="rating">⭐⭐⭐⭐⭐ (5.0/5)</div>
+        <button>Додати до кошика</button>
+      </div>
+      <div class="menu-item">
+        <h3>Пельмені з лососем</h3>
+        <img src="рибні.jfif" alt="Пельмені" />
+        <p>Смачні та Морскі</p>
+        <div class="rating">⭐⭐⭐⭐☆ (4.4/5)</div>
+        <button>Додати до кошика</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>🛒 Кошик замовлень</h2>
+    <p>Ваш кошик поки що порожній. Додайте пельмені з меню.</p>
+  </section>
+
+  <section class="checkout">
+    <h2>📦 Оформлення замовлення</h2>
+    <p><strong>Адреса доставки:</strong></p>
+    <input type="text" placeholder="Введіть адресу" style="width: 100%; padding: 8px; margin-bottom: 10px;">
+    <p><strong>Метод оплати:</strong></p>
+    <select style="width: 100%; padding: 8px;">
+      <option>Готівка</option>
+      <option>Картка онлайн</option>
+    </select>
+    <button>Підтвердити замовлення</button>
+  </section>
+
+  <section id="reviews">
+    <h2>Відгуки</h2>
+    <div class="reviews">
+      <div class="review">
+        <p><strong>Олена:</strong> Дуже смачно, як у дитинстві! ⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="review">
+        <p><strong>Ігор:</strong> Швидка доставка і гаряча їжа. Рекомендую! ⭐⭐⭐⭐☆</p>
+      </div>
+      <div class="review">
+        <p><strong>Марина:</strong> Замовляю вже втретє — завжди чудово! ⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="review">
+        <p><strong>Тарас:</strong> Фу вегатеріанські пельмені без мяса ⭐☆☆☆☆</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Контакти</h2>
+    <p>Email: Artemikso14@gmail.com</p>
+    <p>Телефон: +38 (093) 060-23-58</p>
+    <p>Адреса: м. ,Бориспіль, вул. Пельмешка, 33</p>
+  </footer>
+</body>
+</html>
